@@ -15,4 +15,4 @@ $ make all
 $ ./app app.c my-bucket-name
 ```
 
-If you want to learn more about this project, c, go, and cgo please checkout out my article: [Cloud native C](https://dev.to/lukaszbudnik/cloud-native-c-kik-temp-slug-3139541).
+If you want to learn more about this project, c, go, and cgo please checkout out my article: [Cloud native C](https://dev.to/lukaszbudnik/cloud-native-c-48m).
