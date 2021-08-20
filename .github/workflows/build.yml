@@ -19,5 +19,5 @@ jobs:
       - name: Upload binary build files
         uses: actions/upload-artifact@v2
         with:
-          name: binary-app
+          name: macos-binary
           path: ./app
