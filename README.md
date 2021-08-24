@@ -12,7 +12,7 @@ Supported platforms (built automatically using GitHub Actions) are:
 - Ubuntu 20.04
 - Windows 2019 with MinGW
 
-See [build.yml](.github/workflows/build.yml)) for details.
+See [build.yml](.github/workflows/build.yml) for details.
 
 To build and run the project (assuming make, gcc and go are installed) simply execute:
 
