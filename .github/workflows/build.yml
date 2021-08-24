@@ -24,7 +24,7 @@ jobs:
           path: ./app
 
   build-linux:
-    name: Build Linux x86 binary
+    name: Build Linux binary
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
@@ -40,5 +40,25 @@ jobs:
       - name: Upload binary build files
         uses: actions/upload-artifact@v2
         with:
-          name: linux-x86-binary
+          name: linux-binary
           path: ./app
+
+  build-windows:
+    name: Build Windows binary
+    runs-on: windows-2019
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: '1.16'
+
+      - name: Compile the project
+        run: make all
+
+      - name: Upload binary build files
+        uses: actions/upload-artifact@v2
+        with:
+          name: windows-binary
+          path: ./app.exe
