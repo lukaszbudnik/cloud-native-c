@@ -3,13 +3,11 @@
 This is a sample project which shows how to integrate C and Go.
 
 It contains:
-
 - Go code which uploads and downloads objects to/from AWS S3
 - C code which calls Go code to handle upload/download logic
 - Makefile
 
-Supported platforms are:
-
+Supported platforms (built automatically using GitHub Actions) are:
 - MacOS 10.15
 - Ubuntu 20.04
 - Windows 2019 with MinGW
