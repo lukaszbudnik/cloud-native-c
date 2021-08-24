@@ -8,7 +8,15 @@ It contains:
 - C code which calls Go code to handle upload/download logic
 - Makefile
 
-To build and run the project (assuming gcc and go are installed) execute:
+Supported platforms are:
+
+- MacOS 10.15
+- Ubuntu 20.04
+- Windows 2019 with MinGW
+
+See [build.yml](.github/workflows/build.yml)) for details.
+
+To build and run the project (assuming make, gcc and go are installed) simply execute:
 
 ```sh
 $ make all
