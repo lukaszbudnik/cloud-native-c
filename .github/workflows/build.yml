@@ -42,3 +42,23 @@ jobs:
         with:
           name: linux-x86-binary
           path: ./app
+
+  build-windows:
+    name: Build Windows binary
+    runs-on: windows-2019
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: '1.16'
+
+      - name: Compile the project
+        run: make all
+
+      - name: Upload binary build files
+        uses: actions/upload-artifact@v2
+        with:
+          name: windows-binary
+          path: ./app
